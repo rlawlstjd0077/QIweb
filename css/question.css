@@ -1,0 +1,18 @@
+@CHARSET "EUC-KR";
+
+#templatebox{
+	background-color: red;
+	height: 40px; 
+	margin:0px 20px 0px 20px;
+}
+
+#templatelist {
+	width: 300px;
+}
+#item_add{
+	
+}
+
+option{
+	min-height: 0.5em;
+}

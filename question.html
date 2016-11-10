@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="EUC-KR">
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<div id="create_qi" class="modal modal-fixed-footer .modal-trigger">
+		<div class="modal-content">
+			<h4>설문 조사 이름</h4>
+			<p>
+				<input placeholder="설문 명" name="title" type="text" id="qi_title" />
+			</p>
+		</div>
+		<div class="modal-footer">
+			<a class="waves-effect waves-green btn-flat" id="confirm">Agree</a>
+			<a class="waves-effect waves-green btn-flat" id="delete">Delete</a>
+		</div>
+	</div>
+
+	<a class="btn-floating btn-large waves-effect waves-light red" id = "open_qmodal"><i class="material-icons"></i></a>
+    <p><a class="waves-effect waves-lsight btn template" id="submit">제출</a></p>
+    <div id="create_question" class="modal modal-fixed-footer">      
+    	<div class="modal-content">
+      		<h4>형식 선택</h4>
+      			<p>
+      				<input name = "group1" type="radio" id="test1" value="selective" checked="true"/>
+      				<label for="test1">선택형</label>
+      				
+      				<input name = "group1" type="radio" id="test2" value="short_answer"/>
+      				<label for="test2">단답형</label>
+      			</p>	
+      			<p>
+      				<input placeholder="질문 내용" name= "title" type="text" id="title"/>
+      			</p>
+      			<div id="templatebox">
+      				<p class="center" style="margin:auto;">자주 쓰는 템플릿 - template</p>      					
+      			</div>
+      			<div id="templatelist">
+      				<p><a class="waves-effect waves-light btn template" id="1">button</a></p>
+      				<p><a class="waves-effect waves-light btn template" id="2">button</a></p>
+      				<p><a class="waves-effect waves-light btn template" id="3">button</a></p>
+      			</div>
+    	</div>
+    	<div class="modal-footer">
+     		 <a class="waves-effect waves-green btn-flat" id="confirm" >Agree</a>
+   		</div>
+ 	</div>
+    
+    <div id="create_item" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<h4>선택지</h4>
+			<input placeholder="답변 내용" name="item" type="text" id="item1" class="item">
+    	</div>
+    	<div class="modal-footer">
+     		 <a class="waves-effect waves-light btn" id="item_add">item 추가</a>
+     		 <a class="waves-effect waves-light btn" id="item_delete">item 삭제</a>
+     		 <a class="waves-effect waves-green btn-flat" id="confirm" >Agree</a>
+   		</div>
+	</div>
+	
+
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/question.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
